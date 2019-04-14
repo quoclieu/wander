@@ -1,7 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { updateDates } from '../actions';
+import { updateDates } from '../../actions';
+import './styles.scss';
 
 class InitialDetails extends React.Component {
   state = {};
