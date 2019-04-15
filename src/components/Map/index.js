@@ -13,7 +13,7 @@ const Map = compose(
       process.env.REACT_APP_GOOGLE_MAPS_API_URL
     }&libraries=places`,
     loadingElement: <div style={{ height: `100%` }} />,
-    containerElement: <div style={{ height: `400px` }} />,
+    containerElement: <div style={{ height: `100vh` }} />,
     mapElement: <div style={{ height: `100%` }} />
   }),
   withScriptjs,

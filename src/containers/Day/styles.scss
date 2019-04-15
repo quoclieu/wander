@@ -1,0 +1,10 @@
+.Day {
+  $planBarWidth: 500px;
+  .planBar {
+    float: left;
+    width: $planBarWidth;
+  }
+  .right {
+    margin-left: $planBarWidth;
+  }
+}
