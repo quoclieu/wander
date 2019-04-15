@@ -1,0 +1,30 @@
+@import '../../variables.scss';
+
+.Navbar {
+  margin: 10px 0px;
+  padding: 0px 60px;
+  // border-bottom: 1px solid $third-theme;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  li {
+    float: left;
+    padding: 10px 30px;
+    border-bottom: 5px solid transparent;
+    font-weight: 600;
+    a {
+      color: black;
+      text-decoration: none;
+    }
+    &:hover {
+      border-bottom: 5px solid $secondary-theme;
+      cursor: pointer;
+    }
+  }
+  li.right {
+    float: right;
+  }
+}

@@ -6,6 +6,7 @@ import Authenticate from './containers/Authenticate';
 import Home from './containers/Home';
 import Overview from './containers/Overview';
 import Day from './containers/Day';
+import Navbar from './components/Navbar';
 import './styles.scss';
 
 const PageNotFound = () => {
@@ -15,6 +16,7 @@ const PageNotFound = () => {
 const authenticatedRoute = () => {
   return (
     <BrowserRouter>
+      <Navbar />
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/overview" exact component={Overview} />

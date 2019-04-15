@@ -1,3 +1,26 @@
+@import '../../variables.scss';
+
 .Home {
-  text-align: center;
+  .tripGrid {
+    margin-bottom: 20px;
+    .tripCard {
+      border: 5px solid $primary-theme;
+      // height: 150px;
+      width: 200px;
+      padding: 20px;
+      border-radius: 10px;
+      float: left;
+      margin: 0px 20px 20px 0px;
+      &:hover {
+        border: 5px solid $secondary-theme;
+        cursor: pointer;
+      }
+      .title {
+        font-size: 40px;
+      }
+      .date {
+        font-weight: 500;
+      }
+    }
+  }
 }

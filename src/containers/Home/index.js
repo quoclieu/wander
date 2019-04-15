@@ -6,15 +6,22 @@ import './styles.scss';
 class Home extends React.Component {
   state = {};
 
+  handleTripSelect = () => {
+    // eslint-disable-next-line react/destructuring-assignment
+    this.props.history.push('/days');
+  };
+
+  handleOptionsBtn = () => {};
+
   renderTrips = () => {
     return (
       <>
-        <div className="trip">
-          <div className="title">Japan</div>
-          <div className="date">01/01/2020</div>
+        <div className="tripCard">
+          <h4 className="title">Japan</h4>
+          <div className="date">01/01/2020 - 10/02/2020</div>
         </div>
-        <div className="trip">
-          <div className="title">China</div>
+        <div className="tripCard">
+          <h4 className="title">Date night</h4>
           <div className="date">01/01/2020</div>
         </div>
       </>
@@ -28,11 +35,10 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div className="Home">
-        <div>Trips</div>
-        <div>Upcoming trips</div>
-        <div className="tripGrid">
-          {this.renderTrips()}
+      <div className="Home container">
+        <h1>Whats next?</h1>
+        <div className="tripGrid">{this.renderTrips()}</div>
+        <div>
           <button
             type="button"
             onClick={this.handleNewTripBtn}
@@ -40,8 +46,8 @@ class Home extends React.Component {
           >
             +
           </button>
+          <div>Previous trips</div>
         </div>
-        <div>Previous trips</div>
       </div>
     );
   }

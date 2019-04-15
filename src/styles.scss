@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  padding: 80px 20px;
+  padding: 0px 90px;
 }
 
 .clear {
@@ -36,4 +36,21 @@ button {
   &:hover {
     cursor: pointer;
   }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 48px;
+  color: $primary-theme;
+}
+
+h4 {
+  margin-bottom: 10px;
 }
