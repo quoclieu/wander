@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 
-import tripDetailsReducer from './tripDetailsReducer';
+import tripReducer from './tripReducer';
 
 export default combineReducers({
-  dates: tripDetailsReducer,
+  trip: tripReducer,
 });

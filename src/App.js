@@ -2,9 +2,8 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Authenticate from './containers/Authenticate';
-// import InitialDetails from './containers/InitialDetails';
 import Home from './containers/Home';
-import Overview from './containers/Overview';
+import Trip from './containers/Trip';
 import Day from './containers/Day';
 import Navbar from './components/Navbar';
 import './styles.scss';
@@ -19,7 +18,7 @@ const authenticatedRoute = () => {
       <Navbar />
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/overview" exact component={Overview} />
+        <Route path="/trip" exact component={Trip} />
         <Route path="/day" exact component={Day} />
         <Route component={PageNotFound} />
       </Switch>

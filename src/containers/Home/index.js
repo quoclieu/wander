@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
 import { connect } from 'react-redux';
 
@@ -8,15 +10,15 @@ class Home extends React.Component {
 
   handleTripSelect = () => {
     // eslint-disable-next-line react/destructuring-assignment
-    this.props.history.push('/days');
+    this.props.history.push('/day');
   };
 
   handleOptionsBtn = () => {};
 
   renderTrips = () => {
     return (
-      <>
-        <div className="tripCard">
+      <div>
+        <div className="tripCard" onClick={this.handleTripSelect}>
           <h4 className="title">Japan</h4>
           <div className="date">01/01/2020 - 10/02/2020</div>
         </div>
@@ -24,7 +26,7 @@ class Home extends React.Component {
           <h4 className="title">Date night</h4>
           <div className="date">01/01/2020</div>
         </div>
-      </>
+      </div>
     );
   };
 

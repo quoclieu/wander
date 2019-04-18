@@ -1,9 +1,9 @@
 @import '../../variables.scss';
 
 .Navbar {
-  margin: 10px 0px;
+  margin: 10px 0px 0px 0px;
   padding: 0px 60px;
-  // border-bottom: 1px solid $third-theme;
+  border-bottom: 1px solid gray;
   ul {
     list-style-type: none;
     margin: 0;
