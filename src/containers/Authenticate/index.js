@@ -17,17 +17,17 @@ class Authenticate extends React.Component {
 
   render() {
     return (
-      <div className="Authenticate">
-        <div className="center">
-          <div className="heading">wander.</div>
-          <div className="loginButtonRow">
+      <section className="Authenticate">
+        <div className="wrapper">
+          <header className="heading">wander.</header>
+          <section className="login-button-row">
             <button type="button" onClick={this.handleLoginButton}>
               Log In
             </button>
             <button type="button">Sign Up</button>
-          </div>
+          </section>
         </div>
-      </div>
+      </section>
     );
   }
 }

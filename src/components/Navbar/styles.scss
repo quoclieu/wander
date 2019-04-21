@@ -15,14 +15,17 @@
     padding: 10px 30px;
     border-bottom: 5px solid transparent;
     font-weight: 600;
-    a {
-      color: black;
-      text-decoration: none;
-    }
-    &:hover {
-      border-bottom: 5px solid $secondary-theme;
-      cursor: pointer;
-    }
+  }
+  li:hover {
+    border-bottom: 5px solid $secondary-theme;
+    cursor: pointer;
+  }
+  li:hover > a {
+    color: $secondary-theme;
+  }
+  li a {
+    color: black;
+    text-decoration: none;
   }
   li.right {
     float: right;

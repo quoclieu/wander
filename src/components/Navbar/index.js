@@ -9,7 +9,7 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <div className="Navbar">
+      <nav className="Navbar">
         <ul>
           <li>
             <Link to="/">Trips</Link>
@@ -17,9 +17,11 @@ class Navbar extends React.Component {
           <li className="right">
             <Link to="/">Help</Link>
           </li>
-          <li className="right">Profile</li>
+          <li className="right">
+            <Link to="/">Profile</Link>
+          </li>
         </ul>
-      </div>
+      </nav>
     );
   }
 }

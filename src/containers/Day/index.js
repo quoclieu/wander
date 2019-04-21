@@ -11,36 +11,37 @@ class Day extends React.Component {
 
   renderPlanningBar = () => {
     return (
-      <div className="planBar">
+      <section className="plan-bar">
+        {/* TO DO: FIX THIS PART UP WITH PROPER SEMANTICS ONCE DESIGN IS CONFIRMED */}
         <div className="date">1/1/2019</div>
         <button
           type="button"
-          className="addDayBtn"
+          className="add-day-btn"
           onClick={this.handleAddDayBtn}
         >
           +
         </button>
-        <div className="unplannedSection">
+        <div className="unplanned-section">
           <div>Some random place</div>
         </div>
-        <div className="plannedSection">
+        <div className="planned-section">
           <div className="time">Time</div>
           <div className="Name">Some actual place</div>
-          <div className="Location">Some actual place</div>
+          <div className="location">Some actual place</div>
         </div>
-      </div>
+      </section>
     );
   };
 
   render() {
     return (
-      <div className="Day">
+      <section className="Day">
         {this.renderPlanningBar()}
         <div className="right">
           <Map />
         </div>
         <div className="clear" />
-      </div>
+      </section>
     );
   }
 }

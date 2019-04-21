@@ -23,14 +23,14 @@ class Overview extends React.Component {
       <div className="Overview">
         <div className="title">To Nakamura</div>
         <div className="dates">
-          <div className="startDate">1/5/2019</div>
-          <div className="endDate">2/5/2019</div>
+          <div className="start-date">1/5/2019</div>
+          <div className="end-date">2/5/2019</div>
         </div>
-        <div className="daysView">
+        <div className="days-view">
           {this.renderDays()}
           <button
             type="button"
-            className="addDate"
+            className="add-date"
             onClick={this.handleAddDateBtn}
           >
             +

@@ -41,9 +41,9 @@ const authenticated = true;
 
 const App = () => {
   if (authenticated) {
-    return <div className="App">{authenticatedRoute()}</div>;
+    return <section className="App">{authenticatedRoute()}</section>;
   }
-  return <div className="App">{unauthenticatedRoute()}</div>;
+  return <section className="App">{unauthenticatedRoute()}</section>;
 };
 
 export default App;

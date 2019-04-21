@@ -17,16 +17,20 @@ class Home extends React.Component {
 
   renderTrips = () => {
     return (
-      <div>
-        <div className="tripCard" onClick={this.handleTripSelect}>
-          <h4 className="title">Japan</h4>
-          <div className="date">01/01/2020 - 10/02/2020</div>
+      <section className="trip-grid">
+        <div className="trip-card" onClick={this.handleTripSelect}>
+          <header>
+            <h4 className="title">Japan</h4>
+            <p className="date">01/01/2020 - 10/02/2020</p>
+          </header>
         </div>
-        <div className="tripCard">
-          <h4 className="title">Date night</h4>
-          <div className="date">01/01/2020</div>
+        <div className="trip-card" onClick={this.handleTripSelect}>
+          <header>
+            <h4 className="title">Date</h4>
+            <p className="date">01/01/2020 - 10/02/2020</p>
+          </header>
         </div>
-      </div>
+      </section>
     );
   };
 
@@ -37,20 +41,19 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div className="Home container">
-        <h1>Whats next?</h1>
-        <div className="tripGrid">{this.renderTrips()}</div>
-        <div>
-          <button
-            type="button"
-            onClick={this.handleNewTripBtn}
-            className="newTripBtn"
-          >
-            +
-          </button>
-          <div>Previous trips</div>
-        </div>
-      </div>
+      <section className="Home container">
+        <header>
+          <h1>Whats next?</h1>
+        </header>
+        {this.renderTrips()}
+        <button
+          type="button"
+          onClick={this.handleNewTripBtn}
+          className="new-trip-btn"
+        >
+          +
+        </button>
+      </section>
     );
   }
 }

@@ -4,7 +4,7 @@
   background-color: $third-theme;
   height: 100vh;
   text-align: center;
-  .center {
+  .wrapper {
     width: 100%;
     position: absolute;
     left: 50%;
@@ -16,9 +16,7 @@
     font-size: 72px;
     font-weight: bold;
   }
-  .loginButtonRow {
-    button {
-      width: 150px;
-    }
+  .login-button-row button {
+    width: 150px;
   }
 }
