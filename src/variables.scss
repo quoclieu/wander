@@ -1,11 +1,26 @@
-/* Color Theme Swatches in Hex */
-/* Color Theme Swatches in Hex */
-$Rustic-with-Teal-Accent-1-hex: #77e3c4;
-$Rustic-with-Teal-Accent-2-hex: #ff8986;
-$Rustic-with-Teal-Accent-3-hex: #ffc7a7;
-$Rustic-with-Teal-Accent-4-hex: #ffefd5;
-$Rustic-with-Teal-Accent-5-hex: #ffaf7b;
+$red-dark: #d56366;
+$red-light: #e87375;
+$teal-dark: #6cefd9;
+$teal-light: #76f7e0;
+$purple-dark: #8a61f9;
+$purple-light: #a3b7ff;
+$blue-dark: #4aa1ff;
+$blue-light: #4599f8;
+$orange-dark: #f6bb76;
+$orange-light: #facb6a;
 
-$primary-theme: #ff8986;
-$secondary-theme: #77e3c4;
-$third-theme: #ffaf7b;
+$first-theme: $red-light;
+$second-theme: $teal-light;
+$third-theme: $blue-light;
+$fourth-theme: $orange-light;
+
+$gray: #f0f0f0;
+$dark-gray: #484848;
+$white: #ffffff;
+$black: #000000;
+
+$bg-gradient: linear-gradient(
+  152deg,
+  rgba(74, 161, 255, 1) 0%,
+  rgba(108, 239, 217, 1) 99%
+);

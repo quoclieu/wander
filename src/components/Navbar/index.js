@@ -1,28 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
+import SignedInLinks from './SignedInLinks';
+import SignedOutLinks from './SignedOutLinks';
 import './styles.scss';
 
 class Navbar extends React.Component {
-  state = {};
+  static renderNavLinks(authenticated) {
+    if (authenticated) {
+      return <SignedInLinks />;
+    }
+    return <SignedOutLinks />;
+  }
 
   render() {
-    return (
-      <nav className="Navbar">
-        <ul>
-          <li>
-            <Link to="/">Trips</Link>
-          </li>
-          <li className="right">
-            <Link to="/">Help</Link>
-          </li>
-          <li className="right">
-            <Link to="/">Profile</Link>
-          </li>
-        </ul>
-      </nav>
-    );
+    const { authenticated } = this.props;
+    return <nav className="Navbar">{Navbar.renderNavLinks(authenticated)}</nav>;
   }
 }
 const mapStateToProps = () => {

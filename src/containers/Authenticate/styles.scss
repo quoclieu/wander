@@ -1,22 +1,50 @@
 @import '../../variables.scss';
 
 .Authenticate {
-  background-color: $third-theme;
   height: 100vh;
   text-align: center;
-  .wrapper {
-    width: 100%;
+  background: $bg-gradient;
+  .col {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -100%);
+    margin-top: 150px;
+    text-align: left;
   }
-  .heading {
-    color: white;
-    font-size: 72px;
+  header {
+    color: $white;
+    font-size: 20px;
+  }
+  header .white-dash {
+    background-color: white;
+    height: 5px;
+    width: 70px;
+    margin: 22px 0px 22px 15px;
+  }
+  header .heading {
+    color: $gray;
+    font-size: 64px;
     font-weight: bold;
   }
-  .login-button-row button {
-    width: 150px;
+  header p {
+    margin: 10px;
+    font-weight: bold;
+  }
+  header .hoverable {
+    color: $gray;
+    font-weight: bold;
+    transition: 2s;
+  }
+  header .colored {
+    color: $teal-light;
+  }
+  header .hoverable:hover {
+    transition: 0.5s;
+    color: $teal-light;
+    cursor: default;
+  }
+  .start {
+    margin-top: 20px;
+    width: 170px;
+    color: $white;
+    background-color: transparent;
   }
 }

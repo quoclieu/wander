@@ -7612,6 +7612,12 @@ react-google-maps@^9.4.5:
     scriptjs "^2.5.8"
     warning "^3.0.0"
 
+react-grid-system@^4.4.5:
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/react-grid-system/-/react-grid-system-4.4.5.tgz#deb0120a2f83de4c48c828a555afdcf6ad9d8d1e"
+  dependencies:
+    prop-types "^15.6.2"
+
 react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.6:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"

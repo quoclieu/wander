@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Container, Row, Col } from 'react-grid-system';
 
 import './styles.scss';
 
@@ -18,15 +19,41 @@ class Authenticate extends React.Component {
   render() {
     return (
       <section className="Authenticate">
-        <div className="wrapper">
-          <header className="heading">wander.</header>
-          <section className="login-button-row">
-            <button type="button" onClick={this.handleLoginButton}>
-              Log In
-            </button>
-            <button type="button">Sign Up</button>
-          </section>
-        </div>
+        <Container>
+          <Row>
+            <Col sm={6} className="col">
+              <section className="welcome">
+                <header>
+                  <p className="heading">
+                    plan your travel itinerary with
+                    <span className="hoverable"> w</span>
+                    <span className="hoverable">a</span>
+                    <span className="hoverable">n</span>
+                    <span className="hoverable">d</span>
+                    <span className="hoverable">e</span>
+                    <span className="hoverable">r</span>
+                    <span className="hoverable colored">.</span>
+                  </p>
+                  <div className="white-dash" />
+                  <p>
+                    Create your own detailed journey or get inspiration from
+                    others.
+                  </p>
+                </header>
+                <button
+                  type="button"
+                  className="start rnd-btn white-border"
+                  onClick={this.handleLoginButton}
+                >
+                  start a plan
+                </button>
+              </section>
+            </Col>
+            <Col sm={6} className="main-screenshot col">
+              IMAGES
+            </Col>
+          </Row>
+        </Container>
       </section>
     );
   }

@@ -12,10 +12,12 @@ const PageNotFound = () => {
   return <div>404</div>;
 };
 
+const authenticated = true;
+
 const authenticatedRoute = () => {
   return (
     <BrowserRouter>
-      <Navbar />
+      <Navbar authenticated={authenticated} />
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/trip" exact component={Trip} />
@@ -29,6 +31,7 @@ const authenticatedRoute = () => {
 const unauthenticatedRoute = () => {
   return (
     <BrowserRouter>
+      <Navbar authenticated={authenticated} />
       <Switch>
         <Route path="/" exact component={Authenticate} />
         <Route component={PageNotFound} />
@@ -36,8 +39,6 @@ const unauthenticatedRoute = () => {
     </BrowserRouter>
   );
 };
-
-const authenticated = true;
 
 const App = () => {
   if (authenticated) {

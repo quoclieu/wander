@@ -1,31 +1,36 @@
 @import '../../variables.scss';
 
-.Navbar {
-  margin: 10px 0px 0px 0px;
-  padding: 0px 60px;
-  border-bottom: 1px solid gray;
+nav.Navbar {
+  margin: 0px;
+  position: absolute;
+  width: 100%;
+  font-size: 14px;
+  border-bottom: 1px solid $gray;
   ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 10px 60px;
     overflow: hidden;
+    padding: 0px;
+  }
+  ul.signed-in > li > a {
+    color: $dark-gray;
   }
   li {
     float: left;
-    padding: 10px 30px;
+    padding: 10px 20px;
     border-bottom: 5px solid transparent;
-    font-weight: 600;
   }
   li:hover {
-    border-bottom: 5px solid $secondary-theme;
     cursor: pointer;
   }
-  li:hover > a {
-    color: $secondary-theme;
-  }
   li a {
-    color: black;
+    color: white;
     text-decoration: none;
+    font-weight: 500;
+  }
+  li.borders {
+    border: 2px solid $white;
+    border-radius: 5px;
   }
   li.right {
     float: right;

@@ -24,12 +24,6 @@ class Home extends React.Component {
             <p className="date">01/01/2020 - 10/02/2020</p>
           </header>
         </div>
-        <div className="trip-card" onClick={this.handleTripSelect}>
-          <header>
-            <h4 className="title">Date</h4>
-            <p className="date">01/01/2020 - 10/02/2020</p>
-          </header>
-        </div>
       </section>
     );
   };
