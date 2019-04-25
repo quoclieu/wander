@@ -1,8 +1,11 @@
 .Day {
-  $planBarWidth: 50%;
+  $planBarWidth: 40%;
   .plan-bar {
     float: left;
     width: $planBarWidth;
+  }
+  .plan-bar.container {
+    padding-right: 0px;
   }
   .right {
     margin-left: $planBarWidth;

@@ -7,20 +7,11 @@ import './styles.scss';
 class Day extends React.Component {
   state = {};
 
-  handleAddDayBtn = () => {};
-
   renderPlanningBar = () => {
     return (
-      <section className="plan-bar">
+      <section className="plan-bar container">
         {/* TO DO: FIX THIS PART UP WITH PROPER SEMANTICS ONCE DESIGN IS CONFIRMED */}
         <div className="date">1/1/2019</div>
-        <button
-          type="button"
-          className="add-day-btn"
-          onClick={this.handleAddDayBtn}
-        >
-          +
-        </button>
         <div className="unplanned-section">
           <div>Some random place</div>
         </div>
@@ -38,7 +29,7 @@ class Day extends React.Component {
       <section className="Day">
         {this.renderPlanningBar()}
         <div className="right">
-          <Map />
+          <Map isMarkerShown />
         </div>
         <div className="clear" />
       </section>
