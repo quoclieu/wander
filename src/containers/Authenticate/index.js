@@ -25,7 +25,7 @@ class Authenticate extends React.Component {
               <section className="welcome">
                 <header>
                   <p className="heading">
-                    plan your travel itinerary with
+                    Plan your travel itinerary with
                     <span className="hoverable"> w</span>
                     <span className="hoverable">a</span>
                     <span className="hoverable">n</span>
@@ -50,7 +50,15 @@ class Authenticate extends React.Component {
               </section>
             </Col>
             <Col sm={6} className="main-screenshot col">
-              IMAGES
+              <div
+                className="images-placeholder"
+                style={{
+                  backgroundColor: 'white',
+                  borderRadius: '20px',
+                  width: '100%',
+                  height: '100%'
+                }}
+              />
             </Col>
           </Row>
         </Container>

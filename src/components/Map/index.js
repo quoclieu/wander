@@ -60,7 +60,6 @@ const Map = compose(
             '0.position',
             this.state.center
           );
-          console.log(nextMarkers);
           this.setState({
             center: nextCenter,
             markers: [...this.state.markers, nextMarkers]

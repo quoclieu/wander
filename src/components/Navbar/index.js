@@ -15,7 +15,13 @@ class Navbar extends React.Component {
 
   render() {
     const { authenticated } = this.props;
-    return <nav className="Navbar">{Navbar.renderNavLinks(authenticated)}</nav>;
+    let navClassName = 'Navbar';
+    if (authenticated) {
+      navClassName += ' authNav';
+    }
+    return (
+      <nav className={navClassName}>{Navbar.renderNavLinks(authenticated)}</nav>
+    );
   }
 }
 const mapStateToProps = () => {

@@ -17,7 +17,7 @@
     background-color: white;
     height: 5px;
     width: 70px;
-    margin: 22px 0px 22px 15px;
+    margin: 22px 0px 22px 0px;
   }
   header .heading {
     color: $gray;
@@ -25,7 +25,7 @@
     font-weight: bold;
   }
   header p {
-    margin: 10px;
+    margin: 0px;
     font-weight: bold;
   }
   header .hoverable {
@@ -46,5 +46,10 @@
     width: 170px;
     color: $white;
     background-color: transparent;
+    transition: 0.2s;
+  }
+  .start:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
   }
 }

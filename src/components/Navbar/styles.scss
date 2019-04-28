@@ -4,10 +4,12 @@ nav.Navbar {
   margin: 0px;
   position: absolute;
   z-index: $nav-bar-z-index;
-  background-color: white;
   width: 100%;
   font-size: 14px;
-  border-bottom: 1px solid $gray;
+  &.authClassName {
+    background-color: white;
+    border-bottom: 1px solid $gray;
+  }
   ul {
     list-style-type: none;
     margin: 10px 60px;
@@ -26,8 +28,12 @@ nav.Navbar {
     cursor: pointer;
   }
   li a {
-    color: white;
     text-decoration: none;
+    font-weight: 500;
+  }
+  li button {
+    padding: 0px;
+    font-size: 14px;
     font-weight: 500;
   }
   li.borders {
